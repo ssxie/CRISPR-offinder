@@ -50,7 +50,7 @@ CRISPR-offinder.pl version 1.0
 Usage:
 
   perl CRISPR-offinder.pl <option>
-  -i            [s] Input file <required>
+        -i            [s] Input file <required>
 	-o            [s] Output dir <default: ./>
 	-pam          [s] protospacer adjacent motif(PAM) <required>
 	-pamtype      [s] motif type f/r f:forword,5' r:reverse,3' <deafult: f>
