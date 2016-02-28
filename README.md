@@ -24,7 +24,7 @@ VERSION
          Feb 24, 2016
 
 SYNOPSIS
-         $ perl ./CRISPR-offinder.pl <option>
+         $ perl CRISPR-offinder.pl <option>
          For help information, type 'perl CRISPR-offinder.pl'
 
 DESCRIPTION
