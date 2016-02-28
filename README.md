@@ -1,5 +1,5 @@
 ABOUT
-CRISPR-offinder.pl - A perl script used for designing CRISPR guide RNA and
+CRISPR-offinder - A program used for designing CRISPR guide RNA and
 searching off-targets for user-defined protospacer adjacent motif(PAM)
 
 CRISPR-offinder requires an OpenCL-enabled device (CPU, GPU, or etc..) and corresponding 
@@ -11,9 +11,7 @@ http://software.intel.com/en-us/vcsource/tools/opencl-sdk
 2.NVidia: http://www.nvidia.com/Download/index.aspx
 3.AMD: http://support.amd.com/en-us/download
 
-Before installing CRISPR-offinder, please check whether your device is an OpenCL-supported one.
-
-Bae, S. et al. (2014) Cas-OFFinder: a fast and versatile algorithm that searches for potential 
+Before installing CRISPR-offinder, please check whether your device is an OpenCL-supported one and make sure that Cas-OFFinder program work well. Bae, S. et al. (2014) Cas-OFFinder: a fast and versatile algorithm that searches for potential 
 off-target sites of Cas9 RNA-guided endonucleases. Bioinformatics., 30, 1473-1475.
 
 Supported OS
