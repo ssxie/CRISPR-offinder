@@ -50,20 +50,6 @@ CRISPR-offinder.pl version 1.0
 Usage:
 
   perl CRISPR-offinder.pl <option>
-        -i            [s] Input file <required>
-	-o            [s] Output dir <default: ./>
-	-pam          [s] protospacer adjacent motif(PAM) <required>
-	-pamtype      [s] motif type f/r f:forword,5' r:reverse,3' <deafult: f>
-	-length       [i] Length of protospacer <default: 20>
-	-gc_min       [i] The minimum value of GC content <default: 20>
-	-gc_max       [i] The maximum value of GC content <default: 80>
-	-mismatches   [i] Number of mismatches[0-9] <default: 5>
-	-strand       [s] Searching CRISPR target sites using DNA strands based option(s/a/b) <default: s>
-	-cga          [s] (C: using CPUs, G: using GPUs, A: using accelerators) <default: C>
-	-gd           [s] genome dir <default: $Bin/genome>
-	-system       [s] run system (Linux32/Linux64/Mac) <default: Linux64>
-	-offset_start [i] The minimum value of sgRNA offset <default: -2>
-	-offset_end   [i] The maximum value of sgRNA offset <default: 32>
 
 Whole genome of target organism is needed (in FASTA format). You can find one in one of the below links:
 1.UCSC genome sequences library
@@ -72,40 +58,9 @@ Extract all FASTA files in a directory. Remember the full path of the FASTA file
 
 For help information: perl CRISPR-offinder.pl
 
-PAM requirement:
-    NGG - SpCas9 from Streptococcus pyogenes - direction: 3’
-    NRG - SpCas9 from Streptococcus pyogenes - direction: 3’
-    NNAGAAW - StCas9 from Streptococcus thermophilus - direction: 3’
-    NNNNGMTT - NmCas9 from Neisseria meningitidis - direction: 3’
-    NNGRRT - SaCas9 from Staphylococcus aureus - direction: 3’
-    NNNRRT - SaCas9 KKH variant - direction: 3’
-    NGG(reduced NAG binding) - SpCas9 D1135E variant - direction: 3’
-    NGCG - SpCas9 VRER variant - direction: 3’
-    NGAG - SpCas9 EQR variant - direction: 3’
-    NGAN-NGNG - SpCas9 VQR variant - direction: 3’
-    NGG - FnCas9 from Francisella novicida - direction: 3’
-    YG - FnCas9 RHA variant - direction: 3’
-    TTTN - AsCpf1 from Acidaminococcus, LbCpf1 from Lachnospiraceae - direction: 5’
-    TTN - FnCpf1 from Francisella novicida strain U112 - direction: 5’
-    CTA - FnCpf1 from Francisella novicida strain U112 - direction: 5’
-    TTN-CTA - FnCpf1 from Francisella novicida strain U112 - direction: 5’
-    TTN - C2c1 from four major taxa: Bacilli, Verrucomicrobia, a-proteobacteria, and d-proteobacteria - direction: 5’
-    Custom, Enter your PAM - enter user defined-PAM
-
-    Code  Base     Code  Base
-    A 	Adenine 	K 	G or T
-    C 	Cytosine 	M 	A or C
-    G 	Guanine 	B 	C or G or T
-    T 	Thymine 	D 	A or G or T
-    R 	A or G  	H 	A or C or T
-    Y 	C or T  	V 	A or C or G
-    S 	G or C  	N 	any base
-    W 	A or T 	 
-    
-    Note that CRISPR-offinder allows mixed bases to account for the degeneracy in PAM sequences
+Note that CRISPR-offinder allows mixed bases to account for the degeneracy in PAM sequences
 
 Install of CRISPR-offinder:
-
 unzip CRISPR-offinder_1.0.zip
 
 Change the access permissions to Cas-OFFinder in Linux system, type:
