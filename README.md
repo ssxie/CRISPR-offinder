@@ -36,7 +36,7 @@ DESCRIPTION
 
 AUTHOR
          Shengsong Xie and Wubin Qu
-         E-mail: ssxie@mail.hzau.edu.cn or wubin.qu\@igenetech.com
+         E-mail: ssxie\@mail.hzau.edu.cn or wubin.qu\@igenetech.com
 
 Homepage
          http://www.crispr-offinder.com, http://crispr.igenetech.com
