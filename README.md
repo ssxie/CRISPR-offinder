@@ -1,5 +1,6 @@
 ABOUT
-CRISPR-offinder - A program used for designing CRISPR guide RNA and
+CRISPR-offinder 
+- A program used for designing CRISPR guide RNA and
 searching off-targets for user-defined protospacer adjacent motif(PAM)
 
 CRISPR-offinder requires an OpenCL-enabled device (CPU, GPU, or etc..) and corresponding 
